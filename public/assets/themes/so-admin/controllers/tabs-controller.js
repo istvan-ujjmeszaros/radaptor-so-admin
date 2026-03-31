@@ -2,7 +2,7 @@
  * Tabs Controller
  * Handle tab switching without page reload
  */
-import { Controller } from "/assets/themes/so-admin/js/stimulus.js"
+import { Controller } from "/assets/packages/themes/so-admin/js/stimulus.js"
 
 export default class extends Controller {
     static targets = ['tab', 'panel']

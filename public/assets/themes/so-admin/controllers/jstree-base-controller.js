@@ -8,9 +8,9 @@
  *
  * This is exported for subclasses to extend.
  */
-import { Controller } from "/assets/themes/so-admin/js/stimulus.js"
-import { t } from "/assets/themes/so-admin/js/i18n.js"
-import { renderBlockLoader } from "/assets/themes/so-admin/js/async-loader.js"
+import { Controller } from "/assets/packages/themes/so-admin/js/stimulus.js"
+import { t } from "/assets/packages/themes/so-admin/js/i18n.js"
+import { renderBlockLoader } from "/assets/packages/themes/so-admin/js/async-loader.js"
 
 export default class JstreeBaseController extends Controller {
     static values = {

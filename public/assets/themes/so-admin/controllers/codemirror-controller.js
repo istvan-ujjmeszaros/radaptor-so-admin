@@ -2,7 +2,7 @@
  * CodeMirror Controller
  * Code editor using CodeMirror 6 (dynamic ES module loading)
  */
-import { Controller } from "/assets/themes/so-admin/js/stimulus.js"
+import { Controller } from "/assets/packages/themes/so-admin/js/stimulus.js"
 
 export default class extends Controller {
     static targets = ["editor", "textarea"]

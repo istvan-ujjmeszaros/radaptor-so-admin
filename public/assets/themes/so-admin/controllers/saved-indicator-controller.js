@@ -12,7 +12,7 @@
  * - Subtle fade animation
  * - Auto-hides after 2 seconds
  */
-import { Controller } from "/assets/themes/so-admin/js/stimulus.js"
+import { Controller } from "/assets/packages/themes/so-admin/js/stimulus.js"
 
 export default class extends Controller {
     static targets = ['indicator']

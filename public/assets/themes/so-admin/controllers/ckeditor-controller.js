@@ -4,7 +4,7 @@
  *
  * Waits for CKEditor to load since it may be included after this controller.
  */
-import { Controller } from "/assets/themes/so-admin/js/stimulus.js"
+import { Controller } from "/assets/packages/themes/so-admin/js/stimulus.js"
 
 export default class extends Controller {
     connect() {

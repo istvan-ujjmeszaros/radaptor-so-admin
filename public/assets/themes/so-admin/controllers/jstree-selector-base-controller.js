@@ -8,7 +8,7 @@
  *
  * This is exported for subclasses to extend.
  */
-import { Controller } from "/assets/themes/so-admin/js/stimulus.js"
+import { Controller } from "/assets/packages/themes/so-admin/js/stimulus.js"
 
 export default class JstreeSelectorBaseController extends Controller {
     static values = {

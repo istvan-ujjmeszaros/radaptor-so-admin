@@ -2,7 +2,7 @@
  * Dropdown Controller
  * Custom dropdown handling (supplements Bootstrap dropdowns)
  */
-import { Controller } from "/assets/themes/so-admin/js/stimulus.js"
+import { Controller } from "/assets/packages/themes/so-admin/js/stimulus.js"
 
 export default class extends Controller {
     static targets = ['menu']

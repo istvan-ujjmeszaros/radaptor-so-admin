@@ -2,7 +2,7 @@
  * Sidebar Controller
  * Handles sidebar toggle and mobile responsive behavior
  */
-import { Controller } from "/assets/themes/so-admin/js/stimulus.js"
+import { Controller } from "/assets/packages/themes/so-admin/js/stimulus.js"
 
 export default class extends Controller {
     static targets = ['sidebar']

@@ -14,7 +14,7 @@
  *   <input type="text" data-slug-generator-target="slug">
  * </div>
  */
-import { Controller } from "/assets/themes/so-admin/js/stimulus.js"
+import { Controller } from "/assets/packages/themes/so-admin/js/stimulus.js"
 
 export default class extends Controller {
     static targets = ["source", "slug"]

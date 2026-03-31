@@ -2,7 +2,7 @@
  * Widget Controller
  * Handles widget selection in edit mode
  */
-import { Controller } from "/assets/themes/so-admin/js/stimulus.js"
+import { Controller } from "/assets/packages/themes/so-admin/js/stimulus.js"
 
 export default class extends Controller {
     /**

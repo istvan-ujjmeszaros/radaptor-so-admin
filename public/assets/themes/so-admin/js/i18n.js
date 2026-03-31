@@ -2,7 +2,7 @@
  * JS i18n helper — reads from window.__i18n populated by fetchClosingHtml().
  *
  * Usage in Stimulus controllers:
- *   import { t } from '/assets/themes/so-admin/js/i18n.js';
+ *   import { t } from '/assets/packages/themes/so-admin/js/i18n.js';
  *   t(EXAMPLE_KEY_SAVE)               // → 'Save'
  *   t(EXAMPLE_KEY_CONFIRM, { name: 'John' })  // → 'Delete John?'
  */

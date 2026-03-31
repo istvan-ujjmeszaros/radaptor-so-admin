@@ -9,7 +9,7 @@
  * - New elements are added (AJAX, htmx, etc.)
  * - data-controller attribute is added to existing elements
  */
-import { Application } from "/assets/themes/so-admin/js/stimulus.js"
+import { Application } from "/assets/packages/themes/so-admin/js/stimulus.js"
 
 const app = Application.start()
 
@@ -19,7 +19,7 @@ window.StimulusApp = app
 
 const controllerAttribute = "data-controller"
 const config = window.__RADAPTOR__?.stimulus?.controllers
-const basePath = config?.base || '/assets/themes/so-admin/controllers'
+const basePath = config?.base || '/assets/packages/themes/so-admin/controllers'
 const cacheBuster = config?.version ? `?v=${config.version}` : ''
 
 // Ensure loaded tracking object exists

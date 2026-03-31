@@ -10,7 +10,7 @@
     "public": [
       {
         "source": "public/assets/themes/so-admin",
-        "target": "assets/themes/so-admin"
+        "target": "assets/packages/themes/so-admin"
       }
     ]
   }

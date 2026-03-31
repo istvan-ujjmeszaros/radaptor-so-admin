@@ -2,7 +2,7 @@
  * Flash Controller
  * Handle flash message auto-dismiss and close button
  */
-import { Controller } from "/assets/themes/so-admin/js/stimulus.js"
+import { Controller } from "/assets/packages/themes/so-admin/js/stimulus.js"
 
 export default class extends Controller {
     static values = {
