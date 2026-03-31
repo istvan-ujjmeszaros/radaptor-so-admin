@@ -1,0 +1,76 @@
+body {
+}
+
+.cleaner {
+}
+
+h1 {
+}
+
+#container {
+    background-color:yellow;
+}
+
+#topmenu {
+    background-color:purple;
+}
+#header {
+    background-color:green;
+}
+
+#header-left {
+    background-color:darkgoldenrod;
+}
+
+#header-right {
+    background-color:yellowgreen;
+}
+
+#logo {
+    background-color:red;
+}
+
+#headermenu {
+    background-color:yellow;
+}
+
+#headermenu li {
+}
+
+#headermenu li.active {
+}
+
+#headermenu li:hover {
+}
+
+#headermenu a {
+}
+
+#content {
+    background-color:blue;
+}
+
+.content-full {
+    background-color: tomato;
+}
+
+.content-row1 {
+    background-color:violet;
+}
+
+.content-row2 {
+    background-color: turquoise;
+}
+
+.subheader {
+}
+
+.subheader h1 {
+}
+
+.tag {
+}
+
+.tag:hover {
+}
+

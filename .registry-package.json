@@ -1,0 +1,17 @@
+{
+  "package": "radaptor/themes/so-admin",
+  "type": "theme",
+  "id": "so-admin",
+  "version": "0.1.0-alpha.1",
+  "dependencies": {
+    "radaptor/core/cms": "^0.1.0"
+  },
+  "assets": {
+    "public": [
+      {
+        "source": "public/assets/themes/so-admin",
+        "target": "assets/themes/so-admin"
+      }
+    ]
+  }
+}

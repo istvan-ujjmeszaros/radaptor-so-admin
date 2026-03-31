@@ -1,0 +1,188 @@
+img.ico {
+    padding:0px !important;
+    border:0px !important;
+    background: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+table.editBar {
+    border-spacing: 3px;
+}
+
+table.editBar td, table.editBar th {
+    padding: 3px;
+}
+
+.debug {
+    display: none;
+}
+
+.dina_content small ul li h4
+{
+    margin:0;
+    padding:0;
+}
+
+.dina_content small ul {
+    list-style-type:circle;
+    padding:0 0 0 10px;
+    margin: 0 0 0 10px;
+    text-align:left;
+}
+
+.section-edit {
+    display:none;
+    width:auto;
+    height:30px;
+    padding:3px;
+    margin:0;
+    position:absolute;
+    z-index:10000;
+    background-color:#fff;
+    background-color:#ffdddd;
+    right:0;
+    top:0;
+/*    border-left:3px dotted red;
+    border-bottom:3px dotted red;
+    border-right:3px dotted transparent;
+    border-top:3px dotted transparent;*/
+/*    opacity: .5;*/
+}
+
+.section-area {
+/*    display:inline-block;*/
+    position:relative;
+/*    width:auto;*/
+    height:auto;
+    min-height:50px;
+/*    outline: 2px dotted green;*/
+    outline:2px solid #ffcccc;
+/*    margin: 3px 0;*/
+    min-width:20px;
+    float: none;
+}
+
+.section-area:hover {
+    outline: 2px solid #ff7777;
+}
+
+.section-area .section-edit {
+    display: none;
+}
+
+.section-area:hover .section-edit {
+    display:block;
+}
+
+.section-insert {
+/*    display: inline-block;*/
+    outline:1px dashed #d54e21;
+    background-color: #fae9e3;
+    padding:1px 1px 0 1px;
+    margin: 10px;
+    min-width:20px;
+    min-height: 20px;
+    display: block;
+    width: auto;
+    clear: both;
+}
+
+.sectionTypeSelector {
+    /* the selector only hides on outside click when it is "visible" on
+       the page, but the size of 0x0 works well... */
+    width:0;
+    height:0;
+    overflow:hidden;
+}
+
+.sectionTypeSelector input {
+    width:300px;
+}
+.combobox-button {
+    height:26px !important;
+    line-height:24px;
+    top:2px;
+    display:inline-block !important;
+
+    float:left;
+    border-left: none;
+    width:auto !important;
+    padding: 0 5px;
+    margin:0;
+    text-align:center;
+}
+
+.combobox-input {
+    margin:0;
+    height: 24px;
+    line-height:24px;
+    padding:0;
+    position:relative;
+    top:2px;
+    outline:none;
+    display:inline-block !important;
+
+    float:left;
+}
+
+.combobox-holder {
+    background-color:red;
+    white-space: nowrap;
+}
+
+.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   user-select: none;
+}
+
+.combobox-label {
+    display: block;
+    margin-right:30px;
+}
+
+.combobox-item {
+    display: block;
+    position:relative;
+}
+
+.combobox-info {
+    display:block;
+    position:absolute;
+    top:4px;
+    right:4px;
+    width:16px;
+    height:16px;
+    vertical-align:middle;
+    background: transparent url('/_common/ico/help1.png') no-repeat;
+}
+
+.block-editable {
+    outline: 5px solid #a3cca3;
+}
+
+.editable-special-background {
+    background-color: orange;
+    background: orange url(../_common/background/subtle_zebra_3d.png) repeat;
+    outline: 2px solid #a3cca3;
+}
+
+.editable-special-background:hover {
+    outline: 2px solid #a3cca3;
+}
+
+.section-error {
+    display: block;
+    background-color: red;
+    color: #ffffff;
+}
+
+.CodeMirror {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    height: 500px;
+}
+

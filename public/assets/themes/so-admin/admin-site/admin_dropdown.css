@@ -1,0 +1,6 @@
+#admin_dropdown_icon {
+    position: fixed;
+    bottom:2px;
+    right:2px;
+    z-index:9999999;
+}

@@ -1,0 +1,19 @@
+.mediacontainer_elem {
+	width:160px;
+	height:auto;
+	float:left;
+	margin-left:15px;
+	margin-right: 15px;
+	margin-top: 10px;
+	text-align:center;
+}
+
+.mediacontainer_elem div input {
+	width:160px;
+}
+
+.mediacontainer_keptarto {
+	width:155px;
+	height:100px;
+	text-align:center;
+}
