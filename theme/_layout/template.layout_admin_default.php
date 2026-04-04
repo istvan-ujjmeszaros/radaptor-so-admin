@@ -44,8 +44,11 @@ $administration_label = (string)($this->props['administration_label'] ?? $admini
 	</div>
 	<!-- /HEADER -->
 	<!-- CONTENT -->
-	<div class="content">
-		<div class="content-full">
+	<div class="admin-body-layout">
+		<div class="admin-sidebar-panel">
+			<?= $this->fetchSlot('side_menu_admin'); ?>
+		</div>
+		<div class="admin-content-panel">
 			<?= $this->fetchSlot('content'); ?>
 		</div>
 	</div>

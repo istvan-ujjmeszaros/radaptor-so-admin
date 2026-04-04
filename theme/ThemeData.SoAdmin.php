@@ -30,4 +30,9 @@ class ThemeDataSoAdmin extends AbstractThemeData
 	{
 		return self::LIBRARIESCLASSNAME;
 	}
+
+	public static function getIconLibrary(): string
+	{
+		return 'Bootstrap';
+	}
 }
