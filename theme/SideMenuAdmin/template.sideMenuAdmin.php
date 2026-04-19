@@ -1,15 +1,5 @@
 <?php assert(isset($this) && $this instanceof Template); ?>
 <ul class="admin-side-menu">
-	<?php if (Widget::checkWidgetExists('BlogList') && Roles::hasRole('blog_admin')): ?>
-		<li class="menu-section"><?= e($this->strings['admin.menu.section.content']) ?></li>
-		<li>
-			<a href="<?= widget_url('BlogList'); ?>">
-				<i class="bi bi-file-earmark-text"></i>
-				<?= e($this->strings['admin.menu.blog']) ?>
-			</a>
-		</li>
-	<?php endif; ?>
-
 	<li class="menu-section"><?= e($this->strings['admin.menu.section.administration']) ?></li>
 	<li>
 		<a href="<?= widget_url(WidgetList::USERLIST); ?>">
