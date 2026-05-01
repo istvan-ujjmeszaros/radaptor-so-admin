@@ -7,6 +7,14 @@
 			<?= e($this->strings['user.list.title']) ?>
 		</a>
 	</li>
+	<?php if (defined(WidgetList::class . '::MCPTOKENS')): ?>
+		<li>
+			<a href="<?= widget_url((string) constant(WidgetList::class . '::MCPTOKENS')); ?>">
+				<i class="bi bi-key"></i>
+				<?= e($this->strings['admin.menu.mcp_tokens']) ?>
+			</a>
+		</li>
+	<?php endif; ?>
 	<?php if (Roles::hasRole(RoleList::ROLE_USERGROUPS_ADMIN)): ?>
 		<li>
 			<a href="<?= widget_url(WidgetList::USERGROUPLIST); ?>">
