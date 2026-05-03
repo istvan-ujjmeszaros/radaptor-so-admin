@@ -84,6 +84,14 @@
 				<?= e($this->strings['admin.menu.phpinfo']) ?>
 			</a>
 		</li>
+		<?php if (defined(WidgetList::class . '::RUNTIMEDIAGNOSTICS')): ?>
+			<li>
+				<a href="<?= widget_url((string) constant(WidgetList::class . '::RUNTIMEDIAGNOSTICS')); ?>">
+					<i class="bi bi-activity"></i>
+					<?= e($this->strings['admin.menu.runtime_diagnostics'] ?? 'Runtime diagnostics') ?>
+				</a>
+			</li>
+		<?php endif; ?>
 		<li>
 			<a href="/admin/developer/cli-runner.html">
 				<i class="bi bi-terminal"></i>
