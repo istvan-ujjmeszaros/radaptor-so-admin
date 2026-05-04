@@ -2,7 +2,7 @@
     "package": "radaptor/themes/so-admin",
     "type": "theme",
     "id": "so-admin",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "dependencies": {
         "radaptor/core/cms": "^0.1.0"
     },
