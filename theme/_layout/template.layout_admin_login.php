@@ -19,16 +19,33 @@ $document_title = (string)($this->props['document_title'] ?? $site_name);
 	<?= $this->getRenderer()->getCss(); ?>
 	<?= $this->getRenderer()->getJsTop(); ?>
 	<?= $this->getRenderer()->getJs(); ?>
+	<style>
+		.admin-login-shell {
+			box-sizing: border-box;
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 2rem 1rem;
+		}
+
+		.admin-login-content {
+			width: 100%;
+		}
+	</style>
 </head>
 <body>
 <?= $this->getRenderer()->fetchInnerHtml(); ?>
 <div id="container">
 	<div class="content">
 		<div class="content-full">
-			<?= $this->fetchSlot('content'); ?>
+			<main class="admin-login-shell">
+				<div class="admin-login-content">
+					<?= $this->fetchSlot('content'); ?>
+				</div>
+			</main>
 		</div>
 	</div>
-	<br class="cleaner">
 </div>
 <script type="text/javascript">
 	renderSystemMessages();
