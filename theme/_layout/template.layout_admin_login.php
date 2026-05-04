@@ -18,7 +18,6 @@ $document_title = (string)($this->props['document_title'] ?? $site_name);
 	<?= $this->getRenderer()->getLibraryDebugInfo(); ?>
 	<?= $this->getRenderer()->getCss(); ?>
 	<?= $this->getRenderer()->getJsTop(); ?>
-	<?= $this->getRenderer()->getJs(); ?>
 	<style>
 		.admin-login-shell {
 			box-sizing: border-box;
@@ -51,6 +50,7 @@ $document_title = (string)($this->props['document_title'] ?? $site_name);
 	renderSystemMessages();
 </script>
 <?= $this->fetchSlot('page_chrome'); ?>
+<?= $this->getRenderer()->getJs(); ?>
 <?= $this->getRenderer()->fetchClosingHtml(); ?>
 </body>
 </html>
