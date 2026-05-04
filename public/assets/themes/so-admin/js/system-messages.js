@@ -1,7 +1,7 @@
 /**
  * System Messages - Modern toast implementation
  *
- * Replaces legacy Gritter notifications for this theme.
+ * Replaces Gritter notifications for this theme.
  * Fetches messages via AJAX and renders them as flash messages.
  *
  * Usage:
