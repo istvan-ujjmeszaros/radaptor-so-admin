@@ -24,7 +24,9 @@ $document_title = (string)($this->props['document_title'] ?? $site_name);
 	<?= $this->fetchSlot('page_chrome'); ?>
 	<?= $this->getRenderer()->getJs(); ?>
 	<script type="text/javascript">
-		renderSystemMessages();
+		if (typeof renderSystemMessages === 'function') {
+			renderSystemMessages();
+		}
 	</script>
 	<?= $this->getRenderer()->fetchClosingHtml(); ?>
 </body>

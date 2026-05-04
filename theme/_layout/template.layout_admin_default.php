@@ -55,9 +55,11 @@ $administration_label = (string)($this->props['administration_label'] ?? $admini
 	<!-- /CONTENT -->
 	<br class="cleaner">
 </div>
+<?= $this->fetchSlot('page_chrome'); ?>
 <?= $this->getRenderer()->getJs(); ?>
 <script type="text/javascript">
-	renderSystemMessages();
+	if (typeof renderSystemMessages === 'function') {
+		renderSystemMessages();
+	}
 </script>
-<?= $this->fetchSlot('page_chrome'); ?>
 <?= $this->getRenderer()->fetchClosingHtml(); ?>
