@@ -1,4 +1,9 @@
 <?php assert(isset($this) && $this instanceof Template); ?>
+<?php
+$phpinfoUrl = defined(WidgetList::class . '::PHPINFOFRAME')
+	? widget_url((string) constant(WidgetList::class . '::PHPINFOFRAME'))
+	: event_url('system.phpinfo');
+?>
 <ul class="admin-side-menu">
 	<li class="menu-section"><?= e($this->strings['admin.menu.section.administration']) ?></li>
 	<li>
@@ -79,7 +84,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="<?= event_url('system.phpinfo'); ?>">
+			<a href="<?= $phpinfoUrl; ?>">
 				<i class="bi bi-info-circle"></i>
 				<?= e($this->strings['admin.menu.phpinfo']) ?>
 			</a>
