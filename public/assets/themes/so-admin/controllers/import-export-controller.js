@@ -3,6 +3,10 @@ import { t } from "/assets/packages/themes/so-admin/js/i18n.js"
 import { renderBlockLoader } from "/assets/packages/themes/so-admin/js/async-loader.js"
 
 export default class extends Controller {
+    static values = {
+        destructiveConfirm: String,
+    }
+
     static targets = [
         'importForm',
         'fileInput',
@@ -21,10 +25,18 @@ export default class extends Controller {
         const submitter = event.submitter
         const dryRun = submitter?.value === '1'
 
+        if (!dryRun && !this._confirmDestructiveImport()) {
+            return
+        }
+
         await this._submitImport(dryRun)
     }
 
     async runImportFromDialog() {
+        if (!this._confirmDestructiveImport()) {
+            return
+        }
+
         await this._submitImport(false)
     }
 
@@ -214,6 +226,24 @@ export default class extends Controller {
         }
 
         this.dialogTarget.hidden = false
+    }
+
+    _confirmDestructiveImport() {
+        const message = this.hasDestructiveConfirmValue ? this.destructiveConfirmValue.trim() : ''
+
+        if (message === '') {
+            return true
+        }
+
+        const replaceConfirmed = this.hasImportFormTarget
+            ? this.importFormTarget.elements.namedItem('replace_confirmed')?.value === '1'
+            : true
+
+        if (!replaceConfirmed) {
+            return true
+        }
+
+        return window.confirm(message)
     }
 
     _esc(value) {
