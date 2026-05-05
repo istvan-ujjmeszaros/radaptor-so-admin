@@ -6,6 +6,11 @@
     "dependencies": {
         "radaptor/core/cms": "^0.1.0"
     },
+    "composer": {
+        "require": {
+            "php": "^8.5"
+        }
+    },
     "assets": {
         "public": [
             {

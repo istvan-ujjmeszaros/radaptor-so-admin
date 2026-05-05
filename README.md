@@ -1,6 +1,6 @@
 # Radaptor SoAdmin Theme
 
-`radaptor/themes/so-admin` provides the legacy-style admin theme (`SoAdmin`)
+`radaptor/themes/so-admin` provides the classic admin theme (`SoAdmin`)
 for Radaptor CMS.
 It includes theme templates, layout wrappers, and isolated assets maintained
 separately from other themes.

@@ -1,0 +1,7 @@
+{
+    "name": "radaptor/theme-so-admin",
+    "type": "radaptor-package",
+    "require": {
+        "php": "^8.5"
+    }
+}

@@ -51,7 +51,6 @@ export default class extends Controller {
 
         const formData = new FormData(this.importFormTarget)
         formData.set('dry_run', dryRun ? '1' : '0')
-        formData.set('ajax', '1')
 
         this._setBusy(true)
         this._showLoading(dryRun)

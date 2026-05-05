@@ -1,7 +1,7 @@
 /**
  * System Messages - Modern toast implementation
  *
- * Replaces legacy Gritter notifications for this theme.
+ * Replaces Gritter notifications for this theme.
  * Fetches messages via AJAX and renders them as flash messages.
  *
  * Usage:
@@ -14,6 +14,9 @@
      * Fetch and render system messages as flash messages
      */
     function renderSystemMessages() {
+        const container = document.getElementById('flash-messages');
+        if (!container) return;
+
         fetch('/?context=systemmessages&event=renderSystemMessages')
             .then(response => response.json())
             .then(payload => {
@@ -23,9 +26,6 @@
                 }
 
                 const data = payload.data || [];
-                const container = document.getElementById('flash-messages');
-                if (!container) return;
-
                 // Backend returns object keyed by hash, convert to array
                 const messages = Array.isArray(data) ? data : Object.values(data);
                 if (!messages.length) return;
