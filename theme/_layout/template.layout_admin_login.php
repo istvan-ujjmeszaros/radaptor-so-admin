@@ -40,13 +40,13 @@ $document_title = (string)($this->props['document_title'] ?? $site_name);
 		<div class="content-full">
 			<main class="admin-login-shell">
 				<div class="admin-login-content">
-					<?= $this->fetchSlot('content'); ?>
+					<?= $this->fetchContent('content'); ?>
 				</div>
 			</main>
 		</div>
 	</div>
 </div>
-<?= $this->fetchSlot('page_chrome'); ?>
+<?= $this->fetchContent('page_chrome'); ?>
 <?= $this->getRenderer()->getJs(); ?>
 <script type="text/javascript">
 	if (typeof renderSystemMessages === 'function') {
